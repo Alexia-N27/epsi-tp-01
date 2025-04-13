@@ -12,8 +12,10 @@ export class HighlightDirective implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (this.appHighlight) {
       this.renderer.setStyle(this.el.nativeElement, 'font-weight', 'bold');
+      this.renderer.setStyle(this.el.nativeElement, 'background-color', '#ffffcc');
     } else {
       this.renderer.removeStyle(this.el.nativeElement, 'font-weight');
+      this.renderer.removeStyle(this.el.nativeElement, 'background-color');
     }
   }
   // TODO 24: Modifier la directive pour que le texte soit en gras si l'input est true et appliquer cela au champ title du livre sur les pages book-detail et book-list

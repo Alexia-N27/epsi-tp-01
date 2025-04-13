@@ -74,7 +74,7 @@
 **Concepts Angular utilisés**:
 
 ### Problème #16: Directive incomplète
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: La directive highlight ne mettait le texte qu’en gras.
+**Solution technique**: J’ai ajouté un fond jaune clair (background-color) quand appHighlight est à true.
+**Concepts Angular utilisés**: Directive personnalisée, Renderer2, styles conditionnels, ngOnChanges
 
