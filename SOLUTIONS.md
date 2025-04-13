@@ -24,14 +24,14 @@
 **Concepts Angular utilisés**:
 
 ### Problème #6: Formulaire incomplet
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Le formulaire d'ajout n'était pas implémenté dans le composant.
+**Solution technique**: J’ai créé un FormGroup avec FormBuilder contenant les champs requis.
+**Concepts Angular utilisés**: ReactiveFormsModule, FormBuilder, formGroup, formControlName
 
 ### Problème #7: Validations manquantes
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Le formulaire acceptait des champs vides ou invalides.
+**Solution technique**: J’ai ajouté des validateurs (required, minLength) et affiché les erreurs dans le template.
+**Concepts Angular utilisés**: Validators, gestion d’erreurs dans le template, désactivation conditionnelle du bouton submit
 
 ### Problème #8: Navigation manquante
 **Nature du probleme**: Certaines pages comme "Ajout de livre" ne propose aucun moyen de revenir à la page précédente.
