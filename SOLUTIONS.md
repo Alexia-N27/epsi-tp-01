@@ -39,9 +39,9 @@
 **Concepts Angular utilisés**:
 
 ### Problème #9: Erreur dans la console
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Une erreur Cannot read properties of undefined (reading 'title') apparaissait car book était accédé avant d’être défini.
+**Solution technique**: J’ai entouré le bloc HTML avec *ngIf="book" pour ne l’afficher que quand les données sont disponibles.
+**Concepts Angular utilisés**: Directive *ngIf, affichage conditionnel, gestion des données asynchrones.
 
 ### Problème #10: Directive non appliquée
 **Nature du probleme**: La directive appHighlight n'était pas utilisée pour mettre en valeur les titres.
