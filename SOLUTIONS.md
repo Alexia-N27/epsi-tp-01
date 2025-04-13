@@ -64,9 +64,9 @@
 **Concepts Angular utilisés**: Création d’un pipe personnalisé (@Pipe, PipeTransform), utilisation du pipe dans le template
 
 ### Problème #14: Retour utilisateur manquant
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Aucune alerte ne confirmait si une action (favori, suppression) avait réussi ou échoué.
+**Solution technique**: J’ai ajouté des alertes (alert(...)) dans les callbacks next et error des méthodes toggleFavorite et deleteBook.
+**Concepts Angular utilisés**: utilisateur simple (window.alert), gestion des erreurs (callback error)
 
 ### Problème #15: Erreur d'affichage du titre
 **Nature du probleme**:
