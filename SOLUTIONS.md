@@ -34,9 +34,9 @@
 **Concepts Angular utilisés**:
 
 ### Problème #8: Navigation manquante
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Certaines pages comme "Ajout de livre" ne propose aucun moyen de revenir à la page précédente.
+**Solution technique**: J’ai ajouté un bouton "Retour" dans le composant AddBookComponent avec (click)="goBack()" et Location.back(), et ajouté du margin-top pour un meilleur affichage.
+**Concepts Angular utilisés**: Location, gestion d’événements (click)
 
 ### Problème #9: Erreur dans la console
 **Nature du probleme**: Une erreur Cannot read properties of undefined (reading 'title') apparaissait car book était accédé avant d’être défini.
