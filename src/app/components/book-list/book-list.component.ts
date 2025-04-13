@@ -4,14 +4,12 @@ import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BookService } from '../../services/book.service';
 import { Book } from '../../models/book.model';
-import { FormatPipe } from "../../pipes/format.pipe";
-import { TruncatePipe } from "../../pipes/truncate.pipe";
-import { HighlightDirective } from '../../directives/highlight.directive';
+import { BookCardComponent } from '../book-card/book-card.component';
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, FormatPipe, TruncatePipe, HighlightDirective],
+  imports: [CommonModule, RouterLink, FormsModule, BookCardComponent],
   templateUrl: './book-list.component.html',
 })
 export class BookListComponent implements OnInit {

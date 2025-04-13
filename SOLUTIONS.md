@@ -9,9 +9,9 @@
 **Concepts Angular utilisés**: Création d'un pipe personnalisé (@Pipe, transform), Utilisation des pipes dans les templates HTML avec | format
 
 ### Problème #3: Structure de page incomplète
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Des blocs HTML comme le header, le footer, le bouton retour et les cartes de livres étaient dupliqués dans plusieurs composants.
+**Solution technique**: J’ai extrait HeaderComponent, FooterComponent, BackButtonComponent et BookCardComponent pour améliorer la modularité et la réutilisation.
+**Concepts Angular utilisés**: Composants standalone, @Input, @Output
 
 ### Problème #4: Pages non affichées
 **Nature du probleme**: Les composants des routes ne s’affichaient pas car certains n’étaient pas standalone.
@@ -69,9 +69,9 @@
 **Concepts Angular utilisés**: utilisateur simple (window.alert), gestion des erreurs (callback error)
 
 ### Problème #15: Erreur d'affichage du titre
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Les titres s'affichaient sans mise en forme (majuscules manquantes).
+**Solution technique**: J’ai utilisé le pipe capitalize personnalisé.
+**Concepts Angular utilisés**: Pipe personnalisé (@Pipe, transform)
 
 ### Problème #16: Directive incomplète
 **Nature du probleme**: La directive highlight ne mettait le texte qu’en gras.

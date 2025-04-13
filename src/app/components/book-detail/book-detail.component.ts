@@ -4,11 +4,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { BookService } from '../../services/book.service';
 import { Book } from '../../models/book.model';
 import { HighlightDirective } from '../../directives/highlight.directive';
+import { BackButtonComponent } from '../back-button/back-button.component';
+import { BookCardComponent } from '../book-card/book-card.component';
 
 @Component({
   selector: 'app-book-detail',
   standalone: true,
-  imports: [CommonModule, HighlightDirective],
+  imports: [CommonModule, HighlightDirective, BackButtonComponent, BookCardComponent],
   templateUrl: 'book-detail.component.html',
 })
 export class BookDetailComponent implements OnInit {
