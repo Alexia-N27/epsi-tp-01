@@ -4,9 +4,9 @@
 **Concepts Angular utilisés**: Directive routerLink, routing avec provideRouter, Standalone. (routing avec provideRouter et Standalone était déjà présent dans le code)
 
 ### Problème #2: Besoin de formatage de texte
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Les catégories de livre sont affichées avec des underscores, ce qui rend le texte difficile à lire. La premère lettre des catégories n'est pas en majuscule, ce qui nuit à l'esthétique de l'application.
+**Solution technique**: J'ai créé un pipe qui transforme les underscores en espaces et met le premier mot en majuscule et le reste en minuscule. Je l'utilise dans le template pour formater les catégories de livres.
+**Concepts Angular utilisés**: Création d'un pipe personnalisé (@Pipe, transform), Utilisation des pipes dans les templates HTML avec | format
 
 ### Problème #3: Structure de page incomplète
 **Nature du probleme**:

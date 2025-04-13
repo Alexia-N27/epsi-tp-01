@@ -17,11 +17,11 @@
            Il faut utiliser un pipe existant ou en créer un nouveau pipe. Libre choix -->
           {{ book.description }}
         </p>
-        <p>Catégorie: {{ book.category }}</p>
+        <p>Catégorie: {{ book.category | format }}</p>
         <p>Note: {{ book.rating }}</p>
         <p>Favori: {{ book.isFavorite ? 'Oui' : 'Non' }}</p>
       </div>
-      
+
       <div class="book-actions">
         <button routerLink="/books/{{book.id}}">Détails</button>
         <button (click)="toggleFavorite(book)">{{ book.isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris' }}</button>
