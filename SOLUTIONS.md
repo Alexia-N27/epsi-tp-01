@@ -59,9 +59,9 @@
 **Concepts Angular utilisés**: *ngIf
 
 ### Problème #13: Descriptions trop longues
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Les descriptions sont parfois trop longue, ce qui rend l'interface visuellement encombrée et peu lisible.
+**Solution technique**: J’ai créé un pipe personnalisé truncate qui limite les descriptions à 20 caractères. Si le texte dépasse cette limite, il est tronqué et suivi d’un …. Je l'utilise dans le template book-list.components.html ligne 18.
+**Concepts Angular utilisés**: Création d’un pipe personnalisé (@Pipe, PipeTransform), utilisation du pipe dans le template
 
 ### Problème #14: Retour utilisateur manquant
 **Nature du probleme**:
