@@ -19,7 +19,7 @@
 **Concepts Angular utilisés**:  Routing standalone (provideRouter, routes), router-outlet, composants standalone.
 
 ### Problème #5: Route manquante
-**Nature du probleme**:
+**Nature du probleme**: Je n'ai pas eu a résoudre ce probleme il l'était déjà : { path: 'books/:id', component: BookDetailComponent }
 **Solution technique**:
 **Concepts Angular utilisés**:
 
