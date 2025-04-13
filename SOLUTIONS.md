@@ -54,9 +54,9 @@
 **Concepts Angular utilisés**:
 
 ### Problème #12: Données non affichées
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: La variable utilisée dans le *ngIf du template book-list.component.html n'était pas les bonnes. Le composant tentait d’accéder à data, qui n’existait pas dans le contexte.
+**Solution technique**: J’ai remplacé la condition data && data.length > 0 par books && books.length > 0, ce qui correspond bien au nom de la variable contenant la liste des livres.
+**Concepts Angular utilisés**: *ngIf
 
 ### Problème #13: Descriptions trop longues
 **Nature du probleme**:
