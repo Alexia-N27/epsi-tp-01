@@ -6,11 +6,12 @@ import { BookService } from '../../services/book.service';
 import { Book } from '../../models/book.model';
 import { FormatPipe } from "../../pipes/format.pipe";
 import { TruncatePipe } from "../../pipes/truncate.pipe";
+import { HighlightDirective } from '../../directives/highlight.directive';
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, FormsModule, FormatPipe, TruncatePipe],
+  imports: [CommonModule, RouterLink, FormsModule, FormatPipe, TruncatePipe, HighlightDirective],
   templateUrl: './book-list.component.html',
 })
 export class BookListComponent implements OnInit {

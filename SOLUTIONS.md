@@ -44,9 +44,9 @@
 **Concepts Angular utilisés**:
 
 ### Problème #10: Directive non appliquée
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: La directive appHighlight n'était pas utilisée pour mettre en valeur les titres.
+**Solution technique**: Directive appliquée aux titres avec [appHighlight]="book.isFavorite" dans book-list et book?.isFavorite ?? false dans book-detail.
+**Concepts Angular utilisés**: Directive personnalisée (@Input, Renderer2), ngOnChanges
 
 ### Problème #11: Bouton non fonctionnel
 **Nature du probleme**:
