@@ -49,9 +49,9 @@
 **Concepts Angular utilisés**: Directive personnalisée (@Input, Renderer2), ngOnChanges
 
 ### Problème #11: Bouton non fonctionnel
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Le bouton "Retour" ne faisait rien car la méthode goBack() était absente.
+**Solution technique**: J’ai ajouté une méthode goBack() dans le composant en utilisant Location.back() pour revenir à la page précédente.
+**Concepts Angular utilisés**: Gestionnaire d’événement (click), service Location
 
 ### Problème #12: Données non affichées
 **Nature du probleme**: La variable utilisée dans le *ngIf du template book-list.component.html n'était pas les bonnes. Le composant tentait d’accéder à data, qui n’existait pas dans le contexte.
