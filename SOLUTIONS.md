@@ -14,9 +14,9 @@
 **Concepts Angular utilisés**:
 
 ### Problème #4: Pages non affichées
-**Nature du probleme**:
-**Solution technique**:
-**Concepts Angular utilisés**:
+**Nature du probleme**: Les composants des routes ne s’affichaient pas car certains n’étaient pas standalone.
+**Solution technique**:  J’ai vérifié la config provideRouter(routes), et rendu tous les composants de route standalone avec standalone: true.
+**Concepts Angular utilisés**:  Routing standalone (provideRouter, routes), router-outlet, composants standalone.
 
 ### Problème #5: Route manquante
 **Nature du probleme**:
